@@ -1,0 +1,77 @@
+// Variables
+$neon-blue: #68D0DA
+$neon-deepBlue: #6287D8
+$neon-green: #B5E172
+$neon-mauve: #F72AF2
+$neon-purple: #BC8AE4
+$neon-orange: #FA9427
+$neon-pink: #FB1A76
+$neon-red: #F81C25
+$neon-yellow: #F3E838
+$highlight-grey: #D7D7D7
+
+$highlight-nulled-blue: #C8E6D2
+$highlight-nulled-green: #DEE777
+$highlight-nulled-orange: #EFB84D
+$highlight-nulled-red: #E67E7E
+$highlight-nulled-mauve: #B4919D
+
+$side-padding-left: 2px
+$side-padding-right: 2px
+
+$col_black: #000
+$col_white: #fff
+
+// Mixin
+@mixin highlight($bkg, $col)
+  background-color: $bkg
+  color: $col
+  padding-left: $side-padding-left
+  padding-right: $side-padding-right
+
+
+// Highlighter code
+.highlight-blue
+  @include highlight($neon-blue, $col_black)
+
+.highlight-deepBlue
+  @include highlight($neon-deepBlue, $col_white)
+
+.highlight-green
+  @include highlight($neon-green, $col_black)
+
+.highlight-mauve
+  @include highlight($neon-mauve, $col_white)
+
+.highlight-purple
+  @include highlight($neon-purple, $col_white)
+
+.highlight-orange
+  @include highlight($neon-orange, $col_white)
+
+.highlight-pink
+  @include highlight($neon-pink, $col_white)
+
+.highlight-red
+  @include highlight($neon-red, $col_white)
+
+.highlight-yellow
+  @include highlight($neon-yellow, $col_black)
+
+.highlight-grey
+  @include highlight($highlight-grey, $col_black)
+
+.highlight-nulled-blue
+  @include highlight($highlight-nulled-blue, $col_black)
+
+.highlight-nulled-green
+  @include highlight($highlight-nulled-green, $col_black)
+
+.highlight-nulled-orange
+  @include highlight($highlight-nulled-orange, $col_black)
+
+.highlight-nulled-red
+  @include highlight($highlight-nulled-red, $col_black)
+
+.highlight-nulled-mauve
+  @include highlight($highlight-nulled-mauve, $col_black)
